@@ -1,168 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ulrick | Portfolio</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
-  <!-- Custom CSS -->
+  <meta name="description" content="Ulrick - Front-end developer portfolio.">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-dark bg-dark px-4">
-    <a class="navbar-brand fw-bold text-light">ULRICK | <span style="color: #e63946;">PORTFOLIO WEBSITE</span></a>
-    <div>
-      <a href="mailto:balajadiaced@gmail.com" class="text-light text-decoration-none small">CONTACT ME</a>
-    </div>
+  <div id="top"></div>
+
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <a href="#top" class="navbar-brand">ULRICK | <span class="highlight">PORTFOLIO</span></a>
+
+    <button class="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="#top">Home</a></li>
+      <li><a href="#timeline">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li class="nav-contact-item">
+        <a class="nav-contact" href="mailto:balajadiaced@gmail.com">
+          <i class="bi bi-chat-dots"></i> - CONTACT ME
+        </a>
+      </li>
+    </ul>
   </nav>
 
-  <!-- HERO SECTION -->
-  <section class="hero d-flex flex-column flex-md-row align-items-center justify-content-between px-5">
-    <div class="hero-text">
-      <h1>Hi, <br> I’m <span class="highlight">Ulrick</span></h1>
-      <p class="loader"><span>FRONT-END DEVELOPER</span></p>
-      <a href="https://www.facebook.com/ujbalajadia" class="btn btn-danger mt-3">Hire Me</a>
-    </div>
+  <main><br><br>
+    <section class="hero container-grid">
+      <div class="hero-text animated-up">
+        <h1>Hi, <br> I’m <span class="highlight">Ulrick</span></h1>
+        <p class="loader"><span>FRONT-END DEVELOPER</span></p><br>
+        <a class="btn-danger" href="https://www.facebook.com/ujbalajadia" target="_blank" rel="noopener">Hire Me</a>
+      </div>
 
-    <div class="hero-img text-center">
-      <img src="profile.jpg" alt="Profile" class="profile-img">
-    </div>
+      <div class="hero-img animated-up">
+        <img src="profile.jpg" alt="Ulrick profile" class="profile-img">
+      </div>
 
-    <div class="hero-right text-start">
-      <p class="text-danger small">EXPERT ON FRONT-END DEVELOPMENT</p>
-      <p><strong>Based in Tarlac, Philippines</strong><br>
-        I’m a computer science student.<br>
-        Currently studying at<br>
-        Concepcion Holy Cross College, Inc.</p>
-        <br>
+      <aside class="hero-right animated-up">
+        <p><strong>Based in Tarlac, Philippines</strong><br>
+          I’m a computer science student.<br>
+          Currently studying at<br>
+          Concepcion Holy Cross College, Inc.</p>
+
         <p class="text-danger small">CURRICULUM VITAE:</p>
-      <button class="button" data-text="cv" onclick="window.location.href='resume.pdf'">
-        <span class="actual-text">&nbsp;DOWNLOAD&nbsp;</span>
-        <span aria-hidden="true" class="hover-text">&nbsp;DOWNLOAD&nbsp;</span>
-      </button>
+        <button onclick="location.href='resume.pdf'" class="button" style="--accent:#ff2b2b;">
+          <span class="text">DOWNLOAD</span>
+        </button>
 
-    </div>
+      </aside>
+    </section>
 
-  </section>
+    <section id="timeline" class="timeline" id="education">
+      <div class="container">
+        <h2 class="text-danger">Educational Background</h2>
+        <ul class="timeline-list">
+          <li>
+            <div class="content">
+              <h3>Concepcion Holy Cross College</h3>
+              <span class="date">2022 – Current</span>
+              <p>Bachelor of Science in Computer Science<br>
+                Minane, Concepcion, Tarlac</p>
+            </div>
+          </li>
+          <li>
+            <div class="content">
+              <h3>Benigno S. Aquino National High School (SHS)</h3>
+              <span class="date">2020 – 2022</span>
+              <p>Information Communication and Technology Strand<br>
+                San Nicolas Poblacion, Concepcion, Tarlac</p>
+            </div>
+          </li>
+          <li>
+            <div class="content">
+              <h3>Benigno S. Aquino National High School (Secondary)</h3>
+              <span class="date">2016 – 2020</span>
+              <p>Science, Technology, and Engineering Program<br>
+                San Nicolas Poblacion, Concepcion, Tarlac</p>
+            </div>
+          </li>
+          <li>
+            <div class="content">
+              <h3>Good Shepered Christian School</h3>
+              <span class="date">2010 – 2016</span>
+              <p>Santo Cristo, Concepcion, Tarlac</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-  <!-- PROJECTS SECTION -->
-  <section class="projects">
-    <h2>My Projects</h2>
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="project-card">
-            <img src="project1.jpg" alt="Project 1">
-            <h5>Portfolio Website</h5>
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <img src="project1.jpg" alt="Portfolio Website screenshot" loading="lazy">
+            <h5>PORTFOLIO WEBSITE</h5>
             <p>A modern personal portfolio showcasing my UI/UX and web development work.</p>
+          </article>
+
+          <article class="project-card">
+            <img src="project2.png" alt="Student portal screenshot" loading="lazy">
+            <h5>STUDENT PORTAL WEBSITE</h5>
+            <p>A responsive web application that provides students with easy access to course materials, grades, and
+              announcements in one centralized platform.</p>
+          </article>
+
+          <article class="project-card">
+            <img src="project3.png" alt="Credit system screenshot" loading="lazy">
+            <h5>CREDIT SYSTEM WEBSITE</h5>
+            <p>A web-based credit management system for tracking balances, processing payments, and managing user
+              accounts efficiently.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="text-danger">My Skills</h2>
+
+        <div class="skill">
+          <h6>HTML</h6>
+          <div class="progress">
+            <div class="progress-bar bg-danger" data-value="95">0%</div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="project-card">
-            <img src="project2.jpg" alt="Project 2">
-            <h5>Business Landing Page</h5>
-            <p>Responsive landing page designed to help businesses grow their online presence.</p>
+
+        <div class="skill">
+          <h6>CSS</h6>
+          <div class="progress">
+            <div class="progress-bar bg-primary" data-value="90">0%</div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="project-card">
-            <img src="project3.jpg" alt="Project 3">
-            <h5>E-commerce UI</h5>
-            <p>Clean and modern e-commerce interface with product cards and checkout flow.</p>
+
+        <div class="skill">
+          <h6>JavaScript</h6>
+          <div class="progress">
+            <div class="progress-bar bg-warning" data-value="70">0%</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h6>UI / UX Design</h6>
+          <div class="progress">
+            <div class="progress-bar bg-info" data-value="85">0%</div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- SKILLS SECTION -->
-  <section class="skills py-5">
-    <div class="container">
-      <h2 class="text-center mb-4 text-danger">My Skills</h2>
-
-      <div class="mb-4">
-        <h6>HTML</h6>
-        <div class="progress" style="height: 22px;">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
-            style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-            95%
-          </div>
-        </div>
-      </div>
-
-      <div class="mb-4">
-        <h6>CSS</h6>
-        <div class="progress" style="height: 22px;">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar"
-            style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-            90%
-          </div>
-        </div>
-      </div>
-
-      <div class="mb-4">
-        <h6>JavaScript</h6>
-        <div class="progress" style="height: 22px;">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark" role="progressbar"
-            style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-            70%
-          </div>
-        </div>
-      </div>
-
-      <div class="mb-4">
-        <h6>UI / UX Design</h6>
-        <div class="progress" style="height: 22px;">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info text-dark" role="progressbar"
-            style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-            85%
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- FOOTER -->
   <footer class="footer">
-    <!-- Left icons -->
-    <div>
-      <a href="https://www.facebook.com/ujbalajadia" class="text-light me-3"><i class="bi bi-facebook"></i></a>
-      <a href="https://www.linkedin.com/" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
-      <a href="https://www.instagram.com/" class="text-light"><i class="bi bi-instagram"></i></a>
+    <div class="footer-left">
+      <a href="https://www.facebook.com/ujbalajadia" aria-label="Facebook" target="_blank" rel="noopener"><i
+          class="bi bi-facebook"></i></a>
+      <a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener"><i
+          class="bi bi-linkedin"></i></a>
+      <a href="https://www.instagram.com/_johncedd/" aria-label="Instagram" target="_blank" rel="noopener"><i
+          class="bi bi-instagram"></i></a>
     </div>
 
-    <!-- Center link -->
     <div class="footer-center">
-      <a href="https://www.facebook.com/ujbalajadia" class="text-danger small">
-        www.facebook.com/ujbalajadia
-      </a>
+      <span class="footer-full">
+        Copyright © 2025 | Designed and Maintenance by
+        <a class="footer-link text-danger" href="https://www.facebook.com/ujbalajadia" target="_blank" rel="noopener">
+          Ulrick Balajadia
+        </a>
+        | All Rights Reserved
+      </span>
+
+      <span class="footer-short">
+        <a class="footer-link text-danger" href="https://www.facebook.com/ujbalajadia" target="_blank" rel="noopener">
+          Ulrick Balajadia
+        </a>
+        | All Rights Reserved
+      </span>
     </div>
 
-    <!-- Right "Let's Chat" -->
-    <div>
-      <!-- Text version (visible on larger screens) -->
-      <a href="https://www.facebook.com/ujbalajadia" class="text-light small chat-text">
-        Let’s Chat 💬
-      </a>
-      <!-- Icon version (visible on smaller screens) -->
-      <a href="https://www.facebook.com/ujbalajadia" class="text-light chat-icon">
-        <i class="bi bi-chat-dots"></i>
-      </a>
+
+    <div class="footer-right">
+      <a class="chat-text" href="https://www.facebook.com/ujbalajadia" target="_blank" rel="noopener">Let’s Chat <i
+          class="bi bi-chat-dots"></i></a>
+      <a class="chat-icon" href="https://www.facebook.com/ujbalajadia" aria-label="Chat" target="_blank"
+        rel="noopener"><i class="bi bi-chat-dots"></i></a>
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <button id="scrollToTop" aria-label="Scroll to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+
+  <script src="script.js"></script>
 </body>
 
 </html>
