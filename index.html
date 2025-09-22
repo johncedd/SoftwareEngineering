@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- NAVBAR -->
@@ -27,7 +29,7 @@
   <section class="hero d-flex flex-column flex-md-row align-items-center justify-content-between px-5">
     <div class="hero-text">
       <h1>Hi, <br> I’m <span class="highlight">Ulrick</span></h1>
-      <h4>User Interface Designer</h4>
+      <p class="loader"><span>FRONT-END DEVELOPER</span></p>
       <a href="https://www.facebook.com/ujbalajadia" class="btn btn-danger mt-3">Hire Me</a>
     </div>
 
@@ -36,18 +38,20 @@
     </div>
 
     <div class="hero-right text-start">
-      <p class="text-danger small">EXPERT ON WEB DEVELOPMENT</p>
-      <p><strong>Based in Philippines</strong><br>
-         I’m a developer and UI/UX designer.<br>
-         Looking to help build your brand and grow your business.<br>
-         Let’s shake hands.</p>
-      <a href="resume.pdf" class="cv-link">Download CV ⬇</a>
+      <p class="text-danger small">EXPERT ON FRONT-END DEVELOPMENT</p>
+      <p><strong>Based in Tarlac, Philippines</strong><br>
+        I’m a computer science student.<br>
+        Currently studying at<br>
+        Concepcion Holy Cross College, Inc.</p>
+        <br>
+        <p class="text-danger small">CURRICULUM VITAE:</p>
+      <button class="button" data-text="cv" onclick="window.location.href='resume.pdf'">
+        <span class="actual-text">&nbsp;DOWNLOAD&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;DOWNLOAD&nbsp;</span>
+      </button>
+
     </div>
 
-    <div class="rings">
-      <div class="ring red"></div>
-      <div class="ring blue"></div>
-    </div>
   </section>
 
   <!-- PROJECTS SECTION -->
@@ -88,9 +92,8 @@
       <div class="mb-4">
         <h6>HTML</h6>
         <div class="progress" style="height: 22px;">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" 
-               role="progressbar" style="width: 95%;" 
-               aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+            style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
             95%
           </div>
         </div>
@@ -99,9 +102,8 @@
       <div class="mb-4">
         <h6>CSS</h6>
         <div class="progress" style="height: 22px;">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" 
-               role="progressbar" style="width: 90%;" 
-               aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar"
+            style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
             90%
           </div>
         </div>
@@ -110,9 +112,8 @@
       <div class="mb-4">
         <h6>JavaScript</h6>
         <div class="progress" style="height: 22px;">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark" 
-               role="progressbar" style="width: 70%;" 
-               aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark" role="progressbar"
+            style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             70%
           </div>
         </div>
@@ -121,9 +122,8 @@
       <div class="mb-4">
         <h6>UI / UX Design</h6>
         <div class="progress" style="height: 22px;">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info text-dark" 
-               role="progressbar" style="width: 85%;" 
-               aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info text-dark" role="progressbar"
+            style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
             85%
           </div>
         </div>
@@ -133,21 +133,36 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer d-flex justify-content-between px-5 py-3">
+  <footer class="footer">
+    <!-- Left icons -->
     <div>
       <a href="https://www.facebook.com/ujbalajadia" class="text-light me-3"><i class="bi bi-facebook"></i></a>
       <a href="https://www.linkedin.com/" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
       <a href="https://www.instagram.com/" class="text-light"><i class="bi bi-instagram"></i></a>
     </div>
-    <div>
-      <a href="https://www.facebook.com/ujbalajadia" class="text-danger small">www.facebook.com/ujbalajadia</a>
+
+    <!-- Center link -->
+    <div class="footer-center">
+      <a href="https://www.facebook.com/ujbalajadia" class="text-danger small">
+        www.facebook.com/ujbalajadia
+      </a>
     </div>
+
+    <!-- Right "Let's Chat" -->
     <div>
-      <a href="https://www.facebook.com/ujbalajadia" class="text-light small">Let’s Chat 💬</a>
+      <!-- Text version (visible on larger screens) -->
+      <a href="https://www.facebook.com/ujbalajadia" class="text-light small chat-text">
+        Let’s Chat 💬
+      </a>
+      <!-- Icon version (visible on smaller screens) -->
+      <a href="https://www.facebook.com/ujbalajadia" class="text-light chat-icon">
+        <i class="bi bi-chat-dots"></i>
+      </a>
     </div>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
